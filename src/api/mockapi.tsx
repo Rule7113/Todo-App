@@ -2,7 +2,7 @@ import type { ToDo } from "../types/todo";
 
 // Mock To-Do data
 let todos: ToDo[] = [
-  { id: 1, title: "Learn React", description: "Study React hooks and state management", completed: false },
+  { id: 1, title: "Requirements", description: "Add all CRUD operations", completed: false },
   { id: 2, title: "Build To-Do App", description: "Use TypeScript and styled-components", completed: false },
 ];
 
