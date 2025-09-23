@@ -7,7 +7,7 @@ interface ToDoItemProps {
   onUpdate: (todo: ToDo) => void;
   onDelete: (id: number) => void;
 }
-
+// Styling with styled components
 const Item = styled.div`
   background: ${({ theme }) => theme.colors.surfaceElevated};
   padding: ${({ theme }) => theme.spacing.md};
@@ -97,6 +97,7 @@ const ToDoItem: React.FC<ToDoItemProps> = ({ todo, onUpdate, onDelete }) => {
     setIsEditing(false);
   };
 
+  // Logic and layout of the todo items
   return (
     <Item>
       {isEditing ? (
