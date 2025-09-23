@@ -8,7 +8,7 @@ interface ToDoListProps {
   onUpdate: (todo: ToDo) => void;
   onDelete: (id: number) => void;
 }
-
+// Styling with styled components
 const Empty = styled.div`
   border: 1px dashed ${({ theme }) => theme.colors.border};
   border-radius: ${({ theme }) => theme.radii.md};
