@@ -1,6 +1,6 @@
 import type { ToDo } from "../types/todo";
 
-// Mock To-Do data
+// Mock data 
 let todos: ToDo[] = [
   { id: 1, title: "Requirements", description: "Add all CRUD operations", completed: false },
   { id: 2, title: "Build To-Do App", description: "Use TypeScript and styled-components", completed: false },
@@ -9,6 +9,7 @@ let todos: ToDo[] = [
 // Simulated network delay
 const simulateDelay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
+// API Calls below
 // GET: fetch To-Do list
 export const fetchToDos = async (): Promise<ToDo[]> => {
   await simulateDelay(500);
